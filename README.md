@@ -1,42 +1,33 @@
 ## Project Setup
 
-### Clone the Repository:
+- Clone the Repository:
+  - Open your terminal and run git clone <repository-url>.
 
-Open your terminal and run git clone <repository-url>.
+- Navigate to the Project Directory:
+  - Change to the project directory with cd <project-directory>.
 
-### Navigate to the Project Directory:
+- Install Dependencies:
+  - Run npm ci to install dependencies.
 
-Change to the project directory with cd <project-directory>.
+- Run Tests:
+  - Execute tests with npx playwright test.
 
-### Install Dependencies:
+- Additional Steps (if needed):
 
-Run npm ci to install dependencies.
+  - Check Node.js Installation:
+    - Ensure Node.js is installed (node -v and npm -v).
 
-### Run Tests:
+  - Set Environment Variables:
+    - Create a .env file for necessary variables like DATABASE_URL and API_KEY.
 
-Execute tests with npx playwright test.
+  - Update Playwright:
+    - Run npx playwright install to update Playwright.
 
-### Additional Steps (if needed)
+  - Run Specific Tests:
+    - Use npx playwright test <test-file-or-directory> for specific tests.
 
-#### Check Node.js Installation:
-
-Ensure Node.js is installed (node -v and npm -v).
-
-#### Set Environment Variables:
-
-Create a .env file for necessary variables like DATABASE_URL and API_KEY.
-
-#### Update Playwright:
-
-Run npx playwright install to update Playwright.
-
-#### Run Specific Tests:
-
-Use npx playwright test <test-file-or-directory> for specific tests.
-
-#### View Test Results:
-
-Check the playwright-report directory for test results.
+  - View Test Results:
+    - Check the playwright-report directory for test results.
 
 
 <h1>Positive test case</h1>
@@ -64,3 +55,7 @@ After each login attempt:
   - Verify the presence of elements unique to the dashboard page.
 - For unsuccessful logins:
   - Validate the presence of error messages.
+
+### Output
+![ADMIN_login1](https://github.com/shafiqSamin/Assignment-on-PlayWright/assets/103017470/15720778-9343-4474-878e-52bfdbb13e3b)
+
